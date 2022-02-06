@@ -6,9 +6,10 @@
 int* twoSum(int* nums, int numsSize, int target, int* returnSize){
     *returnSize = 2;
     int* returnArray = (int*)malloc(sizeof(int) * 2);
+    int search;
     
     for(int i=0; i<numsSize - 1; i++){
-        int search = target - nums[i];
+        search = target - nums[i];
         
         for(int j=i+1; j<numsSize; j++){
             if(nums[j]==search){
